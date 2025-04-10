@@ -13,7 +13,7 @@ variable "config" {
   })
 }
 
-
-output "config_output" {
-  value = var.config
+variable "environment" {
+  type = string
+  description = "The environment for deployment (e.g., dev, staging, prod)"
 }
